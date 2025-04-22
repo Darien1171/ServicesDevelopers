@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header, main, footer {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+}
+
+// script.js
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('¡Sitio web cargado!');
+});
