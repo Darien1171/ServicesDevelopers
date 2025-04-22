@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - DevTech Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Dev<span>Tech</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#servicios">Servicios</a></li>
+                    <li><a href="index.html#portafolio">Portafolio</a></li>
+                    <li><a href="about.html">Nosotros</a></li>
+                    <li><a href="contact.html" class="active">Contacto</a></li>
+                </ul>
+                <button class="mobile-menu-btn">☰</button>
+            </nav>
+        </div>
+        <div class="mobile-menu-overlay"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="contact-hero" class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Contacto</h1>
+            <p class="page-subtitle">Estamos listos para impulsar tu próximo proyecto</p>
+        </div>
+    </section>
+
+    <!-- Información de Contacto -->
+    <section id="contact-info-section">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-card">
+                    <div class="contact-card-icon">📍</div>
+                    <h3 class="contact-card-title">Nuestra Ubicación</h3>
+                    <p class="contact-card-text">Calle Innovación 123<br>28001 Madrid, España</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-card-icon">📧</div>
+                    <h3 class="contact-card-title">Email</h3>
+                    <p class="contact-card-text">info@devtech-solutions.com<br>soporte@devtech-solutions.com</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-card-icon">📱</div>
+                    <h3 class="contact-card-title">Teléfono</h3>
+                    <p class="contact-card-text">+34 91 123 4567<br>+34 600 123 456</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-card-icon">⏱️</div>
+                    <h3 class="contact-card-title">Horario</h3>
+                    <p class="contact-card-text">Lunes - Viernes: 9:00 - 18:00<br>Sábado - Domingo: Cerrado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="contact-form-section" class="bg-light">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <h2 class="section-title">Envíanos un mensaje</h2>
+                    <p class="form-subtitle">Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre" class="form-label">Nombre completo</label>
+                                <input type="text" id="nombre" name="nombre" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" class="form-control">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="empresa" class="form-label">Empresa</label>
+                                <input type="text" id="empresa" name="empresa" class="form-control">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="asunto" class="form-label">Asunto</label>
+                            <input type="text" id="asunto" name="asunto" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" class="form-control" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">Acepto la <a href="#">política de privacidad</a> y el tratamiento de mis datos.</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info-container">
+                    <h2 class="section-title">¿Por qué contactarnos?</h2>
+                    
+                    <div class="contact-reason">
+                        <div class="reason-icon">💼</div>
+                        <div class="reason-content">
+                            <h3 class="reason-title">Consultoría gratuita</h3>
+                            <p>Ofrecemos una primera sesión de consultoría sin coste para evaluar tus necesidades tecnológicas.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-reason">
+                        <div class="reason-icon">⏱️</div>
+                        <div class="reason-content">
+                            <h3 class="reason-title">Respuesta rápida</h3>
+                            <p>Nos comprometemos a responder a todas las consultas en menos de 24 horas laborables.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-reason">
+                        <div class="reason-icon">📈</div>
+                        <div class="reason-content">
+                            <h3 class="reason-title">Soluciones personalizadas</h3>
+                            <p>Adaptamos nuestras propuestas a tus objetivos específicos y presupuesto.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-reason">
+                        <div class="reason-icon">🤝</div>
+                        <div class="reason-content">
+                            <h3 class="reason-title">Soporte continuo</h3>
+                            <p>Ofrecemos acompañamiento durante todo el ciclo de vida de tu proyecto.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links-container">
+                        <h3>Síguenos en redes sociales</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">FB</a>
+                            <a href="#" class="social-link">TW</a>
+                            <a href="#" class="social-link">IG</a>
+                            <a href="#" class="social-link">IN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa -->
+    <section id="map-section">
+        <div class="map-container">
+            <div class="map-placeholder" style="background-color:#e5e7eb; height:400px; display:flex; justify-content:center; align-items:center; font-size:1.5rem; color:#4b5563;">
+                Mapa de ubicación
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq-section" class="bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Preguntas Frecuentes</h2>
+            <p class="section-subtitle text-center">Resolvemos tus dudas sobre nuestros servicios</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">¿Cuál es el proceso para iniciar un proyecto con DevTech?</div>
+                    <div class="faq-answer">
+                        <p>El proceso comienza con una reunión inicial donde analizamos tus necesidades y objetivos. A continuación, elaboramos una propuesta detallada que incluye alcance, plazos y presupuesto. Una vez aprobada, iniciamos el desarrollo siguiendo metodologías ágiles con entregas incrementales y comunicación constante.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">¿Cuánto tiempo tarda en completarse un proyecto típico?</div>
+                    <div class="faq-answer">
+                        <p>La duración varía según la complejidad y alcance del proyecto. Una aplicación web sencilla puede completarse en 6-8 semanas, mientras que proyectos más complejos pueden requerir 3-6 meses. Siempre establecemos plazos realistas y trabajamos con transparencia sobre los tiempos de entrega.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">¿Ofrecéis mantenimiento y soporte después del lanzamiento?</div>
+                    <div class="faq-answer">
+                        <p>Sí, ofrecemos planes de mantenimiento y soporte técnico para garantizar que tu solución funcione correctamente y se mantenga actualizada. Estos planes incluyen monitorización, actualizaciones de seguridad, corrección de errores y mejoras continuas según tus necesidades.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">¿Trabajáis con empresas de cualquier tamaño?</div>
+                    <div class="faq-answer">
+                        <p>Absolutamente. Tenemos experiencia trabajando con startups, pymes y grandes corporaciones. Adaptamos nuestros servicios y metodologías para satisfacer las necesidades específicas de cada tipo de empresa, ofreciendo soluciones escalables que crecen con tu negocio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>DevTech Solutions</h3>
+                    <p>Transformamos ideas en soluciones digitales innovadoras que impulsan el crecimiento y la eficiencia de tu negocio.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Servicios</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#servicios">Desarrollo Web</a></li>
+                        <li><a href="index.html#servicios">APIs y Microservicios</a></li>
+                        <li><a href="index.html#servicios">Aplicaciones Móviles</a></li>
+                        <li><a href="index.html#servicios">Aplicaciones de Escritorio</a></li>
+                        <li><a href="index.html#servicios">Bases de Datos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Nosotros</a></li>
+                        <li><a href="index.html#portafolio">Portafolio</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Suscríbete para recibir noticias y actualizaciones.</p>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Tu correo electrónico">
+                    </div>
+                    <button class="btn btn-primary">Suscribirse</button>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 DevTech Solutions. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

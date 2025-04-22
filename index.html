@@ -1,83 +1,334 @@
-// index.html
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Sitio Web</title>
+    <title>DevTech Solutions - Servicios de Desarrollo</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a Mi Sitio Web</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Acerca de</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Dev<span>Tech</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="about.html">Nosotros</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+                <button class="mobile-menu-btn">☰</button>
+            </nav>
+        </div>
+        <div class="mobile-menu-overlay"></div>
     </header>
-    
-    <main>
-        <section>
-            <h2>¡Hola, mundo!</h2>
-            <p>Este es mi sitio web alojado en Azure Static Web Apps.</p>
-        </section>
-    </main>
-    
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Transformamos ideas en soluciones digitales</h1>
+                <p class="hero-subtitle">Somos expertos en desarrollo de aplicaciones web, móviles, APIs y soluciones de software a medida que impulsan tu negocio hacia el futuro digital.</p>
+                <div class="hero-buttons">
+                    <a href="#servicios" class="btn btn-primary">Nuestros Servicios</a>
+                    <a href="contact.html" class="btn btn-outline">Contáctanos</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div style="background-color:#4b6bfb; width:100%; height:300px; border-radius:10px; display:flex; justify-content:center; align-items:center; color:white; font-size:2rem;">
+                    Soluciones Tecnológicas
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios">
+        <div class="container">
+            <h2 class="section-title text-center">Nuestros Servicios</h2>
+            <p class="section-subtitle text-center">Ofrecemos soluciones tecnológicas completas adaptadas a tus necesidades</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div>📱</div>
+                    </div>
+                    <h3 class="service-title">Desarrollo Web</h3>
+                    <p class="service-description">Creamos sitios web modernos, responsivos y optimizados para buscadores que convierten visitantes en clientes.</p>
+                    <a href="contact.html" class="btn btn-outline">Saber más</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div>🔄</div>
+                    </div>
+                    <h3 class="service-title">APIs y Microservicios</h3>
+                    <p class="service-description">Desarrollamos APIs robustas y escalables que conectan tus sistemas y permiten la integración con servicios externos.</p>
+                    <a href="contact.html" class="btn btn-outline">Saber más</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div>📊</div>
+                    </div>
+                    <h3 class="service-title">Bases de Datos</h3>
+                    <p class="service-description">Diseñamos e implementamos soluciones de bases de datos optimizadas para el rendimiento y la seguridad de tu información.</p>
+                    <a href="contact.html" class="btn btn-outline">Saber más</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div>📱</div>
+                    </div>
+                    <h3 class="service-title">Aplicaciones Móviles</h3>
+                    <p class="service-description">Desarrollamos apps nativas y multiplataforma para iOS y Android con experiencias de usuario excepcionales.</p>
+                    <a href="contact.html" class="btn btn-outline">Saber más</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div>💻</div>
+                    </div>
+                    <h3 class="service-title">Aplicaciones de Escritorio</h3>
+                    <p class="service-description">Creamos software de escritorio potente y fácil de usar para Windows, macOS y Linux adaptado a tus necesidades.</p>
+                    <a href="contact.html" class="btn btn-outline">Saber más</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div>🔒</div>
+                    </div>
+                    <h3 class="service-title">Seguridad Informática</h3>
+                    <p class="service-description">Implementamos las mejores prácticas de seguridad para proteger tus aplicaciones y datos contra amenazas digitales.</p>
+                    <a href="contact.html" class="btn btn-outline">Saber más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por qué elegirnos -->
+    <section id="por-que-nosotros">
+        <div class="container">
+            <h2 class="section-title text-center">¿Por qué elegirnos?</h2>
+            <p class="section-subtitle text-center">Combinamos experiencia técnica con un enfoque centrado en resultados</p>
+            
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <div>🚀</div>
+                    </div>
+                    <h3 class="feature-title">Entrega Rápida</h3>
+                    <p>Utilizamos metodologías ágiles para entregar resultados tangibles en plazos ajustados sin comprometer la calidad.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <div>🛠️</div>
+                    </div>
+                    <h3 class="feature-title">Tecnología de Vanguardia</h3>
+                    <p>Trabajamos con las últimas tecnologías y frameworks para garantizar soluciones modernas y preparadas para el futuro.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <div>👥</div>
+                    </div>
+                    <h3 class="feature-title">Equipo Experto</h3>
+                    <p>Contamos con desarrolladores senior especializados en diferentes áreas para abordar cualquier desafío técnico.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <div>💰</div>
+                    </div>
+                    <h3 class="feature-title">Costes Optimizados</h3>
+                    <p>Ofrecemos soluciones que maximizan el retorno de inversión y se ajustan a tu presupuesto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso de trabajo -->
+    <section id="proceso">
+        <div class="container">
+            <h2 class="section-title text-center">Nuestro Proceso</h2>
+            <p class="section-subtitle text-center">Un enfoque estructurado para convertir tu idea en realidad</p>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Descubrimiento</h3>
+                    <p class="step-description">Analizamos tus necesidades y objetivos para definir el alcance del proyecto.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Planificación</h3>
+                    <p class="step-description">Diseñamos la arquitectura y planificamos las fases de desarrollo.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Desarrollo</h3>
+                    <p class="step-description">Implementamos la solución con entregas incrementales y revisiones regulares.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">Pruebas</h3>
+                    <p class="step-description">Realizamos pruebas exhaustivas para garantizar calidad y rendimiento.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3 class="step-title">Lanzamiento</h3>
+                    <p class="step-description">Desplegamos la solución y proporcionamos soporte continuo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portafolio -->
+    <section id="portafolio">
+        <div class="container">
+            <h2 class="section-title text-center">Nuestro Portafolio</h2>
+            <p class="section-subtitle text-center">Soluciones exitosas que hemos entregado a nuestros clientes</p>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image" style="background-color:#3b82f6;"></div>
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">App de Gestión Financiera</h3>
+                        <p class="portfolio-category">Aplicación Móvil / API</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image" style="background-color:#10b981;"></div>
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Plataforma E-learning</h3>
+                        <p class="portfolio-category">Desarrollo Web / Base de Datos</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image" style="background-color:#6366f1;"></div>
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Sistema de Inventario</h3>
+                        <p class="portfolio-category">Aplicación de Escritorio</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image" style="background-color:#f59e0b;"></div>
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">API de Pagos</h3>
+                        <p class="portfolio-category">Microservicios / Seguridad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios">
+        <div class="container">
+            <h2 class="section-title text-center">Lo que dicen nuestros clientes</h2>
+            <p class="section-subtitle text-center">Empresas que confían en nuestros servicios</p>
+            
+            <div class="testimonials-container">
+                <div class="testimonial-slider">
+                    <div class="testimonial">
+                        <p class="testimonial-text">DevTech transformó completamente nuestros procesos internos con su aplicación de gestión. El ROI superó todas nuestras expectativas en el primer trimestre.</p>
+                        <div class="testimonial-author">
+                            <div class="author-image"></div>
+                            <div class="author-info">
+                                <h4>Carlos Rodríguez</h4>
+                                <p>CEO, TechSolutions Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <p class="testimonial-text">La API desarrollada por el equipo nos permitió integrar múltiples sistemas y mejorar drásticamente la eficiencia operativa. Su atención al detalle es impresionante.</p>
+                        <div class="testimonial-author">
+                            <div class="author-image"></div>
+                            <div class="author-info">
+                                <h4>María González</h4>
+                                <p>CTO, InnovaTech</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <p class="testimonial-text">Nuestra aplicación móvil ha recibido excelentes críticas desde su lanzamiento. El equipo entendió perfectamente nuestras necesidades y entregó un producto excepcional.</p>
+                        <div class="testimonial-author">
+                            <div class="author-image"></div>
+                            <div class="author-info">
+                                <h4>Javier López</h4>
+                                <p>Director de Producto, AppMasters</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-nav">
+                    <div class="nav-dot active" data-slide="0"></div>
+                    <div class="nav-dot" data-slide="1"></div>
+                    <div class="nav-dot" data-slide="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 - Mi Sitio Web</p>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>DevTech Solutions</h3>
+                    <p>Transformamos ideas en soluciones digitales innovadoras que impulsan el crecimiento y la eficiencia de tu negocio.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Servicios</h3>
+                    <ul class="footer-links">
+                        <li><a href="#servicios">Desarrollo Web</a></li>
+                        <li><a href="#servicios">APIs y Microservicios</a></li>
+                        <li><a href="#servicios">Aplicaciones Móviles</a></li>
+                        <li><a href="#servicios">Aplicaciones de Escritorio</a></li>
+                        <li><a href="#servicios">Bases de Datos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Nosotros</a></li>
+                        <li><a href="#portafolio">Portafolio</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Suscríbete para recibir noticias y actualizaciones.</p>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Tu correo electrónico">
+                    </div>
+                    <button class="btn btn-primary">Suscribirse</button>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 DevTech Solutions. Todos los derechos reservados.</p>
+            </div>
+        </div>
     </footer>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
-
-// styles.css
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-
-header, main, footer {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-header {
-    background-color: #f4f4f4;
-    border-bottom: 1px solid #ddd;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-}
-
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-top: 1px solid #ddd;
-}
-
-// script.js
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('¡Sitio web cargado!');
-});
